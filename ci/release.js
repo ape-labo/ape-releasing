@@ -8,20 +8,15 @@
 "use strict";
 
 var path = require('path'),
-    async = require('async'),
+    apeTasking = require('ape-tasking'),
     apeReleasing = require('../lib');
 
 var basedir = path.resolve(__dirname, '..');
 process.chdir(basedir);
 
 
-async.series([
+apeTasking.runTasks('release', [
     function (callback) {
         apeReleasing.releasePackage({}, callback);
     }
-], function (err) {
-    if (err) {
-        console.error(err);
-    }
-    process.exit();
-});
+], true);

@@ -7,13 +7,13 @@
 "use strict";
 
 var path = require('path'),
-    async = require('async'),
+    apeTasking = require('ape-tasking'),
     apeCovering = require('ape-covering');
 
 var basedir = path.resolve(__dirname, '..');
 process.chdir(basedir);
 
-async.series([
+apeTasking.runTasks('cover', [
     function (callback) {
         apeCovering.measureCoverage(
             require.resolve('./test.js'), [], {
@@ -21,8 +21,4 @@ async.series([
             }, callback
         );
     }
-], function (err) {
-    if (err) {
-        console.error(err);
-    }
-});
+], true);

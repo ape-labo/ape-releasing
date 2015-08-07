@@ -1,21 +1,21 @@
 #!/usr/bin/env node
 
+/**
+ * Run test
+ */
+
 "use strict";
 
 var path = require('path'),
-    apeTesting = require('ape-testing'),
-    async = require('async');
+    apeTasking = require('ape-tasking'),
+    apeTesting = require('ape-testing');
 
 var basedir = path.resolve(__dirname, '..');
 
 process.chdir(basedir);
 
-async.series([
+apeTasking.runTasks('test', [
     function (callback) {
         apeTesting.runNodeunit('test/*_test.js', callback);
     }
-], function (err) {
-    if (err) {
-        console.error(err);
-    }
-});
+], true);

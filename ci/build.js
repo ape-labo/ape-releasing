@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 
 var path = require('path'),
-    async = require('async'),
+    apeTasking = require('ape-tasking'),
     coz = require('coz');
 
 var basedir = path.resolve(__dirname, '..');
 
 process.chdir(basedir);
 
-async.series([
+apeTasking.runTasks('build', [
     function (callback) {
         coz.render([
             '.*.bud',
@@ -16,9 +16,5 @@ async.series([
             'test/.*.bud'
         ], callback);
     }
-], function (err) {
-    if (err) {
-        console.error(err);
-    }
-});
+], true);
 
