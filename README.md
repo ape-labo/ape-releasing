@@ -4,15 +4,23 @@ ape-releasing
 [![Build Status][my_travis_badge_url]][my_travis_url]
 [![Code Climate][my_codeclimate_badge_url]][my_codeclimate_url]
 [![Code Coverage][my_codeclimate_coverage_badge_url]][my_codeclimate_url]
-[![npm version][my_npm_budge_url]][my_npm_url]
+[![Dependency Status][my_gemnasium_badge_url]][my_gemnasium_url]
+[![npm Version][my_npm_budge_url]][my_npm_url]
 
 ape framework module for releasing tasks.
+
+Installation
+----
+
+```javascript
+$ npm install ape-releasing --save
+```
 
 
 Usage
 ----
 
-### Do release.
+### Release a npm Package
 
 `.apeReleasing.releasePackage()` function will do:
 
@@ -26,8 +34,9 @@ Usage
 
 var apeReleasing = require('ape-releasing');
 
+// Release a npm package
 apeReleasing.releasePackage({
-    beforeRelease: [
+    beforeRelease: [ // Scripts run before releasing
         './ci/build.js',
         './ci/test.js'
     ]
@@ -35,7 +44,7 @@ apeReleasing.releasePackage({
 
 ```
 
-### Exec a command.
+### Execute a Command
 
 `.apeReleasing.execCommand()` will execute a command in sub process and pipe stdout/stderr.
 
@@ -44,21 +53,13 @@ apeReleasing.releasePackage({
 
 var apeReleasing = require('ape-releasing');
 
-apeReleasing.execCommand('ci/build.js', [
+// Execute a command
+apeReleasing.execCommand('ci/build.js', [ // Command args
     '-a'
 ], function (err) {
     /*...*/
 });
 ```
-
-
-Installation
-----
-
-```javascript
-$ npm install ape-releasing --save
-```
-
 
 License
 -------
@@ -79,7 +80,8 @@ Links
 [my_codeclimate_url]: http://codeclimate.com/github/ape-repo/ape-releasing
 [my_codeclimate_badge_url]: http://img.shields.io/codeclimate/github/ape-repo/ape-releasing.svg?style=flat
 [my_codeclimate_coverage_badge_url]: http://img.shields.io/codeclimate/coverage/github/ape-repo/ape-releasing.svg?style=flat
-[my_coverage_url]: http://ape-repo.github.io/ape-releasing/coverage/lcov-report
+[my_gemnasium_url]: https://gemnasium.com/ape-repo/ape-releasing
+[my_gemnasium_badge_url]: https://gemnasium.com/ape-repo/ape-releasing.svg
 [my_npm_url]: http://www.npmjs.org/package/ape-releasing
 [my_npm_budge_url]: http://img.shields.io/npm/v/ape-releasing.svg?style=flat
 
