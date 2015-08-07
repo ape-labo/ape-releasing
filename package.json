@@ -1,6 +1,6 @@
 {
   "name": "ape-releasing",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Releasing module for ape framework.",
   "main": "index.js",
   "scripts": {
