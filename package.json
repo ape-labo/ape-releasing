@@ -1,6 +1,6 @@
 {
   "name": "ape-releasing",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Releasing module for ape framework.",
   "main": "lib",
   "scripts": {
@@ -29,6 +29,7 @@
   "dependencies": {
     "argx": "^1.1.5",
     "async": "^1.4.0",
+    "colorprint": "^1.1.1",
     "execcli": "^2.0.1",
     "taggit": "^1.0.3",
     "versionup": "^1.0.7",
