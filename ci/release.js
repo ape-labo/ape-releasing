@@ -20,8 +20,8 @@ async.series([
         apeReleasing.releasePackage({}, callback);
     }
 ], function (err) {
-    console.log('release done!');
     if (err) {
         console.error(err);
     }
+    process.exit();
 });
