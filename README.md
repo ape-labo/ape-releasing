@@ -12,7 +12,7 @@ ape framework module for releasing tasks.
 Installation
 ----
 
-```javascript
+```bash
 $ npm install ape-releasing --save-dev
 ```
 
