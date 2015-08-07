@@ -1,6 +1,6 @@
 {
   "name": "ape-releasing",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Releasing module for ape framework.",
   "main": "lib",
   "scripts": {

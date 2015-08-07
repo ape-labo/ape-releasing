@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Measure test coverage.
+ * Run coverage.
  */
 
 "use strict";
