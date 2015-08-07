@@ -17,11 +17,6 @@ Usage
 ```javascript
 #!/usr/bin/env node
 
-/**
- * This is an example to release packages.
- */
-"use strict";
-
 var apeReleasing = require('ape-releasing');
 
 apeReleasing.releasePackage({
@@ -36,18 +31,11 @@ apeReleasing.releasePackage({
 ### Exec a command.
 
 ```javascript
-#!/usr/bin/env node
-
-/**
- * This is an example to exec a command.
- */
-"use strict";
-
+#!usr/bin/env node
 
 var apeReleasing = require('ape-releasing');
 
 apeReleasing.execCommand('ci/build.js', [
-    // Command args
     '-a'
 ], function (err) {
     /*...*/

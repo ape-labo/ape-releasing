@@ -1,22 +1,18 @@
 #!/usr/bin/env node
 
-
 /**
  * Release this package.
  */
 
 "use strict";
 
-var path = require('path'),
-    apeTasking = require('ape-tasking'),
+process.chdir(__dirname + '/..');
+
+var apeTasking = require('ape-tasking'),
     apeReleasing = require('../lib');
 
-var basedir = path.resolve(__dirname, '..');
-process.chdir(basedir);
-
-
 apeTasking.runTasks('release', [
-    function (callback) {
+    function releasePackage(callback) {
         apeReleasing.releasePackage({
             beforeRelease: [
                 './ci/build.js',
