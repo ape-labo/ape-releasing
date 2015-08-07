@@ -17,12 +17,11 @@ process.chdir(basedir);
 
 apeTasking.runTasks('release', [
     function (callback) {
-        apeReleasing.execCommand('ci/build.js', callback);
-    },
-    function (callback) {
-        apeReleasing.execCommand('ci/test.js', callback);
-    },
-    function (callback) {
-        apeReleasing.releasePackage({}, callback);
+        apeReleasing.releasePackage({
+            beforeRelease: [
+                './ci/build.js',
+                './ci/test.js'
+            ]
+        }, callback);
     }
 ], true);

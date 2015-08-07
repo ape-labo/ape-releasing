@@ -6,7 +6,6 @@
 var releasePackage = require('../lib/release_package.js'),
     yesno = require('yesno'),
     fs = require('fs'),
-    childProcess = require('child_process'),
     injectmock = require('injectmock');
 
 exports.tearDown = function (done) {
@@ -38,3 +37,10 @@ exports['Abort with invalid path'] = function (test) {
     });
 };
 
+
+exports['Wrap task.'] = function (test) {
+    test.ok(releasePackage.task('foo'));
+    test.ok(releasePackage.task(function () {
+    }));
+    test.done();
+};

@@ -22,23 +22,14 @@ Usage
  */
 "use strict";
 
+var apeReleasing = require('ape-releasing');
 
-var apTasking = require('ape-tasking'),
-    apeReleasing = require('ape-releasing');
-
-apTasking.runTasks('release', [
-    function (callback) {
-        // Task before releasing.
-        callback(null);
-    },
-    function (callback) {
-        apeReleasing.releasePackage({/*options*/}, callback);
-    },
-    function (callback) {
-        // Task after releasing.
-        callback(null);
-    }
-], true);
+apeReleasing.releasePackage({
+    beforeRelease: [
+        './ci/build.js',
+        './ci/test.js'
+    ]
+}, callback);
 
 ```
 
