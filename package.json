@@ -1,8 +1,8 @@
 {
   "name": "ape-releasing",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Releasing module for ape framework.",
-  "main": "index.js",
+  "main": "lib",
   "scripts": {
     "build": "./ci/build.js",
     "test": "./ci/test.js",
