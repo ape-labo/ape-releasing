@@ -1,0 +1,42 @@
+{
+  "name": "ape-releasing",
+  "version": "1.0.0",
+  "description": "Releasing module for ape framework.",
+  "main": "index.js",
+  "scripts": {
+    "build": "./ci/build.js",
+    "test": "./ci/test.js",
+    "cover": "./ci/cover.js",
+    "report": "./ci/report.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ape-repo/ape-releasing.git"
+  },
+  "keywords": [
+    "ape",
+    "releasing"
+  ],
+  "author": {
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ape-repo/ape-releasing/issues"
+  },
+  "homepage": "https://github.com/ape-repo/ape-releasing#readme",
+  "dependencies": {
+    "argx": "^1.1.5",
+    "async": "^1.4.0",
+    "taggit": "^1.0.3",
+    "versionup": "^1.0.7",
+    "yesno": "0.0.1"
+  },
+  "devDependencies": {
+    "ape-covering": "^1.0.0",
+    "ape-reporting": "^1.0.0",
+    "ape-testing": "^1.1.0",
+    "coz": "^1.3.1"
+  }
+}
