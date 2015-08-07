@@ -13,7 +13,7 @@ Installation
 ----
 
 ```javascript
-$ npm install ape-releasing --save
+$ npm install ape-releasing --save-dev
 ```
 
 
