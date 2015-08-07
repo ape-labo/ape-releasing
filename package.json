@@ -1,7 +1,7 @@
 {
   "name": "ape-releasing",
-  "version": "1.0.11",
-  "description": "Releasing module for ape framework.",
+  "version": "1.0.12",
+  "description": "ape framework module for releasing tasks.",
   "main": "lib",
   "scripts": {
     "build": "./ci/build.js",

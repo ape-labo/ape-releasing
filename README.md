@@ -6,13 +6,20 @@ ape-releasing
 [![Code Coverage][my_codeclimate_coverage_badge_url]][my_codeclimate_url]
 [![npm version][my_npm_budge_url]][my_npm_url]
 
-Releasing module for ape framework.
+ape framework module for releasing tasks.
 
 
 Usage
 ----
 
 ### Do release.
+
+`.apeReleasing.releasePackage()` function will do:
+
+1. Create a git tag and push to remote.
+2. Publish package to npm.
+3. Increment package.json version number.
+4. Commit and push git local changes.
 
 ```javascript
 #!/usr/bin/env node
@@ -29,6 +36,8 @@ apeReleasing.releasePackage({
 ```
 
 ### Exec a command.
+
+`.apeReleasing.execCommand()` will execute a command in sub process and pipe stdout/stderr.
 
 ```javascript
 #!usr/bin/env node
@@ -59,6 +68,7 @@ This software is released under the [MIT License][my_license_url].
 Links
 ------
 
++ [ape-repo](https://github.com/ape-repo)
 
 
 [npm_url]: https://www.npmjs.org/
