@@ -1,21 +1,41 @@
 ape-releasing
 ==========
 
-[![Build Status][my_travis_badge_url]][my_travis_url]
-[![Code Climate][my_codeclimate_badge_url]][my_codeclimate_url]
-[![Code Coverage][my_codeclimate_coverage_badge_url]][my_codeclimate_url]
-[![Dependency Status][my_gemnasium_badge_url]][my_gemnasium_url]
-[![npm Version][my_npm_budge_url]][my_npm_url]
+<!-- Badge Start -->
+<a name="badges"></a>
+
+[![Build Status][bd_travis_shield_url]][bd_travis_url]
+[![Code Climate][bd_codeclimate_shield_url]][bd_codeclimate_url]
+[![Code Coverage][bd_codeclimate_coverage_shield_url]][bd_codeclimate_url]
+[![Dependency Status][bd_gemnasium_shield_url]][bd_gemnasium_url]
+[![npm Version][bd_npm_shield_url]][bd_npm_url]
+
+[bd_repo_url]: https://github.com/ape-repo/ape-releasing
+[bd_travis_url]: http://travis-ci.org/ape-repo/ape-releasing
+[bd_travis_shield_url]: http://img.shields.io/travis/ape-repo/ape-releasing.svg?style=flat
+[bd_license_url]: https://github.com/ape-repo/ape-releasing/blob/master/LICENSE
+[bd_codeclimate_url]: http://codeclimate.com/github/ape-repo/ape-releasing
+[bd_codeclimate_shield_url]: http://img.shields.io/codeclimate/github/ape-repo/ape-releasing.svg?style=flat
+[bd_codeclimate_coverage_shield_url]: http://img.shields.io/codeclimate/coverage/github/ape-repo/ape-releasing.svg?style=flat
+[bd_gemnasium_url]: https://gemnasium.com/ape-repo/ape-releasing
+[bd_gemnasium_shield_url]: https://gemnasium.com/ape-repo/ape-releasing.svg
+[bd_npm_url]: http://www.npmjs.org/package/ape-releasing
+[bd_npm_shield_url]: http://img.shields.io/npm/v/ape-releasing.svg?style=flat
+
+<!-- Badge End -->
+
+
+<!-- Description Start -->
+<a name="description"></a>
 
 ape framework module for releasing tasks.
 
-Installation
-----
+<!-- Description End -->
 
-```bash
-$ npm install ape-releasing --save-dev
-```
 
+
+<!-- Sections Start -->
+<a name="sections"></a>
 
 Usage
 ----
@@ -61,27 +81,26 @@ apeReleasing.execCommand('ci/build.js', [ // Command args
 });
 ```
 
+<!-- Sections Start -->
+
+
+<!-- LICENSE Start -->
+<a name="license"></a>
+
 License
 -------
-This software is released under the [MIT License][my_license_url].
+This software is released under the [MIT License](https://github.com/ape-repo/ape-releasing/blob/master/LICENSE).
 
+<!-- LICENSE End -->
+
+
+<!-- Links Start -->
+<a name="links"></a>
 
 Links
 ------
 
 + [ape-repo](https://github.com/ape-repo)
++ [npm](https://www.npmjs.com/)
 
-
-[npm_url]: https://www.npmjs.org/
-[my_repo_url]: https://github.com/ape-repo/ape-releasing
-[my_travis_url]: http://travis-ci.org/ape-repo/ape-releasing
-[my_travis_badge_url]: http://img.shields.io/travis/ape-repo/ape-releasing.svg?style=flat
-[my_license_url]: https://github.com/ape-repo/ape-releasing/blob/master/LICENSE
-[my_codeclimate_url]: http://codeclimate.com/github/ape-repo/ape-releasing
-[my_codeclimate_badge_url]: http://img.shields.io/codeclimate/github/ape-repo/ape-releasing.svg?style=flat
-[my_codeclimate_coverage_badge_url]: http://img.shields.io/codeclimate/coverage/github/ape-repo/ape-releasing.svg?style=flat
-[my_gemnasium_url]: https://gemnasium.com/ape-repo/ape-releasing
-[my_gemnasium_badge_url]: https://gemnasium.com/ape-repo/ape-releasing.svg
-[my_npm_url]: http://www.npmjs.org/package/ape-releasing
-[my_npm_budge_url]: http://img.shields.io/npm/v/ape-releasing.svg?style=flat
-
+<!-- Links End -->

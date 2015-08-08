@@ -1,0 +1,23 @@
+Usage
+----
+
+### Release a npm Package
+
+`.apeReleasing.releasePackage()` function will do:
+
+1. Create a git tag and push to remote.
+2. Publish package to npm.
+3. Increment package.json version number.
+4. Commit and push git local changes.
+
+```javascript
+{{{read 'docs/examples/example-release-package.js'}}}
+```
+
+### Execute a Command
+
+`.apeReleasing.execCommand()` will execute a command in sub process and pipe stdout/stderr.
+
+```javascript
+{{{read 'docs/examples/example-exec-command.js'}}}
+```
