@@ -21,6 +21,7 @@ ape-releasing
 [bd_gemnasium_shield_url]: https://gemnasium.com/ape-repo/ape-releasing.svg
 [bd_npm_url]: http://www.npmjs.org/package/ape-releasing
 [bd_npm_shield_url]: http://img.shields.io/npm/v/ape-releasing.svg?style=flat
+[bd_bower_badge_url]: https://img.shields.io/bower/v/ape-releasing.svg?style=flat
 
 <!-- Badge End -->
 
@@ -34,9 +35,13 @@ ape framework module for releasing tasks.
 
 
 
+
 <!-- Sections Start -->
 <a name="sections"></a>
 
+<!-- Section from "docs/readme/02.Usage.md.hbs" Start -->
+
+<a name="section-docs-readme-02-usage-md"></a>
 Usage
 ----
 
@@ -80,6 +85,8 @@ apeReleasing.execCommand('ci/build.js', [ // Command args
     /*...*/
 });
 ```
+<!-- Section from "docs/readme/02.Usage.md.hbs" End -->
+
 
 <!-- Sections Start -->
 
