@@ -1,6 +1,6 @@
 {
   "name": "ape-releasing",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "ape framework module for releasing tasks.",
   "main": "lib",
   "scripts": {
@@ -33,8 +33,7 @@
     "colorprint": "^1.1.2",
     "execcli": "^2.1.1",
     "taggit": "^1.1.1",
-    "versionup": "^1.1.1",
-    "yesno": "0.0.1"
+    "versionup": "^1.1.1"
   },
   "devDependencies": {
     "ape-covering": "^1.0.8",
@@ -44,6 +43,7 @@
     "ape-tmpl": "^1.1.0",
     "ape-updating": "^1.0.1",
     "coz": "^3.0.15",
+    "coz-tmpl": "^1.0.4",
     "injectmock": "^1.1.3",
     "yesno": "0.0.1"
   }
