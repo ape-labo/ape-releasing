@@ -2,15 +2,13 @@ language: node_js
 node_js:
 - '0.11'
 before_install: 
+- npm install nodeunit istanbul -g
 install:
 - npm install
 before_script:
 - npm link .
 script:
-- npm run build
-- npm run test
-- npm run cover
-- npm run report
-env:
-  global:
-    secure: KOPQhy5mF6pa1OY+AY1pddFcKD8/UaqnwKGC8+R7CIUEC5nNHpIJgImDZWPPU0VYdnshsogzj6fOnKzph4/uDOrrSSlA75mqMkOsyEjC+FHV6wfLcQ0paAzbSHgjzeaxkbwwC3jB6zNpX1t+jJVXV4CZ+I54zXqiKhGXX8Hv1JoFlsFH0pQLI/7EjNbfzzHLuWdNesiutTEp4PnqfmQaB3sAhcQn4186TqvTo56yjiq6nyzuUPqYjBJnCg7/kqPkFzb0Wz3IVF04THLQANcEJWaZP/SpoE3aYG1Xd3pY5UwcgczjDUb0NhXKREtWVo6dR3lbCmIPwqphIT7m6g5zN9PYrDFrnqFBQXfZUsrVGordY/RLC7yJpViwGut+B0XPFXsErZwAQDEZQJaMWpiEOOUGTtUJQeXSk6Y4norMv4rs46hD1HVnNIzwgKi1EhaN40iwMjIHaelwJYFXCDI/LUjyvSeYPf1KvwA/ywzGhxXt6EZlsavwfEMR5rQ4jqAOj1Xsqr3r0L2jzGEy4foxb8A/e4WyjuyIJTrvoR2HiY7UNkQlGRRmmvc5AFNa0VZoMxehvMAebxA5RGuS6qGSyTpZObAFnl2dSyfKxuKgwaa/rkh6PXndlScpq0/MAFxonGrWvw2RgKsMT7f4qwlv9ad3cKVyBc2mjk6F0C6+Csc=
+- ./ci/build.js
+- ./ci/test.js
+- ./ci/cover.js
+- ./ci/report.js
