@@ -8,4 +8,6 @@ apeReleasing.releasePackage({
         './ci/build.js',
         './ci/test.js'
     ]
-}, callback);
+}, function (err) {
+    /*...*/
+});

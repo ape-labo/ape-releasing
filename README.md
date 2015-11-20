@@ -69,7 +69,9 @@ apeReleasing.releasePackage({
         './ci/build.js',
         './ci/test.js'
     ]
-}, callback);
+}, function (err) {
+    /*...*/
+});
 
 ```
 
@@ -105,6 +107,8 @@ Available options for `.releasePackage(options, callback)` method.
 | beforeRelease | function[] | Tasks to do before release |
 | afterRelease | function[] | Tasks to do after release |
 | skipInteractive | boolean | Skip confirming before releasing. |
+
+
 
 <!-- Section from "doc/readme/03.Options.md.hbs" End -->
 
