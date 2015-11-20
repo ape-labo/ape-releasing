@@ -44,3 +44,11 @@ exports['Wrap task.'] = function (test) {
     }));
     test.done();
 };
+
+exports['Parse confirming.'] = function (test) {
+    var options = releasePackage._parseOptions({
+        'skip-interactive': true
+    });
+    test.deepEqual(options, {skipInteractive: true});
+    test.done();
+};

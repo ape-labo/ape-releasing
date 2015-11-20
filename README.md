@@ -92,6 +92,22 @@ apeReleasing.execCommand('ci/build.js', [ // Command args
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
+<!-- Section from "doc/readme/03.Options.md.hbs" Start -->
+
+<a name="section-doc-readme-03-options-md"></a>
+Options
+-------
+
+Available options for `.releasePackage(options, callback)` method.
+
+| Name | Type | Value |
+| ---- | ----- | ----- |
+| beforeRelease | function[] | Tasks to do before release |
+| afterRelease | function[] | Tasks to do after release |
+| skipInteractive | boolean | Skip confirming before releasing. |
+
+<!-- Section from "doc/readme/03.Options.md.hbs" End -->
+
 
 <!-- Sections Start -->
 
