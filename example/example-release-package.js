@@ -1,6 +1,7 @@
 #!/usr/bin/env node
+"use strict";
 
-var apeReleasing = require('ape-releasing');
+const apeReleasing = require('ape-releasing');
 
 // Release a npm package
 apeReleasing.releasePackage({
@@ -8,6 +9,6 @@ apeReleasing.releasePackage({
         './ci/build.js',
         './ci/test.js'
     ]
-}, function (err) {
+}, (err) => {
     /*...*/
 });

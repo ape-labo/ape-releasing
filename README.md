@@ -61,7 +61,7 @@ Usage
 ```javascript
 #!/usr/bin/env node
 
-var apeReleasing = require('ape-releasing');
+const apeReleasing = require('ape-releasing');
 
 // Release a npm package
 apeReleasing.releasePackage({
@@ -75,22 +75,7 @@ apeReleasing.releasePackage({
 
 ```
 
-### Execute a Command
 
-`.apeReleasing.execCommand()` will execute a command in sub process and pipe stdout/stderr.
-
-```javascript
-#!usr/bin/env node
-
-var apeReleasing = require('ape-releasing');
-
-// Execute a command
-apeReleasing.execCommand('ci/build.js', [ // Command args
-    '-a'
-], function (err) {
-    /*...*/
-});
-```
 
 <!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
