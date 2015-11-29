@@ -60,6 +60,7 @@ Usage
 
 ```javascript
 #!/usr/bin/env node
+"use strict";
 
 const apeReleasing = require('ape-releasing');
 
@@ -69,7 +70,7 @@ apeReleasing.releasePackage({
         './ci/build.js',
         './ci/test.js'
     ]
-}, function (err) {
+}, (err) => {
     /*...*/
 });
 
