@@ -2,17 +2,17 @@
  * Bud file for index.js
  */
 
-"use strict";
+'use strict'
 
-var cozTmpl = require('coz-tmpl'),
-    pkg = require('../package.json');
+const apeTmpl = require('ape-tmpl')
+const pkg = require('../package.json')
 
-module.exports = cozTmpl.indexJsBud({
-    desc: pkg.description,
-    module: pkg.name,
-    dirname: __dirname
-});
+module.exports = apeTmpl.indexJsBud({
+  desc: pkg.description,
+  module: pkg.name,
+  dirname: __dirname
+})
 
 if (!module.parent) {
-    require('coz').render(__filename);
+  require('ape').render(__filename)
 }

@@ -2,65 +2,55 @@
  * Test case for releasePackage.
  * Runs with mocha.
  */
-"use strict";
+'use strict'
 
-const releasePackage = require('../lib/release_package.js'),
-    assert = require('assert'),
-    yesno = require('yesno'),
-    fs = require('fs'),
-    injectmock = require('injectmock');
+const releasePackage = require('../lib/release_package.js')
+const assert = require('assert')
+const yesno = require('yesno')
+const fs = require('fs')
+const injectmock = require('injectmock')
 
 describe('release-package', () => {
+  before((done) => {
+    done()
+  })
 
-    before((done) => {
-        done();
-    });
+  after((done) => {
+    injectmock.restoreAll()
+    done()
+  })
 
-    after((done) => {
-        injectmock.restoreAll();
-        done();
-    });
+  it('Abort to confirm', (done) => {
+    injectmock(yesno, 'ask', function (msg, defaults, callback) {
+      callback(false)
+    })
+    releasePackage(function (err) {
+      assert.ifError(err)
+      done()
+    })
+  })
 
+  it('Abort with invalid path', (done) => {
+    injectmock(yesno, 'ask', function (msg, defaults, callback) {
+      callback(true)
+    })
+    injectmock(fs, 'exists', function (filename, callback) {
+      callback(false)
+    })
+    releasePackage(function (err) {
+      assert.ok(!!err)
+      done()
+    })
+  })
 
-    it('Abort to confirm', (done) => {
-        injectmock(yesno, 'ask', function (msg, defaults, callback) {
-            callback(false);
-        });
-        releasePackage(function (err) {
-            assert.ifError(err);
-            done();
-        });
-    });
+  it('Parse confirming.', (done) => {
+    let options = releasePackage.parseOptions({
+      'skip-interactive': true
+    })
+    assert.deepEqual(options, { skipInteractive: true })
+    done()
+  })
 
+})
 
-    it('Abort with invalid path', (done) => {
-        injectmock(yesno, 'ask', function (msg, defaults, callback) {
-            callback(true);
-        });
-        injectmock(fs, 'exists', function (filename, callback) {
-            callback(false);
-        });
-        releasePackage(function (err) {
-            assert.ok(!!err);
-            done();
-        });
-    });
-
-
-    it('Wrap task.', (done) => {
-        assert.ok(releasePackage.task('foo'));
-        assert.ok(releasePackage.task(function () {
-        }));
-        done();
-    });
-
-    it('Parse confirming.', (done) => {
-        let options = releasePackage._parseOptions({
-            'skip-interactive': true
-        });
-        assert.deepEqual(options, {skipInteractive: true});
-        done();
-    });
-
-});
-
+/* global describe, it, before, after */

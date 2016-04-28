@@ -4,21 +4,21 @@
  * Release this package.
  */
 
-"use strict";
+'use strict'
 
-process.chdir(__dirname + '/..');
+process.chdir(`${__dirname}/..`)
 
-const apeTasking = require('ape-tasking'),
-    apeReleasing = require('../lib');
+const apeTasking = require('ape-tasking')
+const apeReleasing = require('../lib')
 
 apeTasking.runTasks('release', [
-    (callback) => {
-        apeReleasing.releasePackage({
-            beforeRelease: [
-                './ci/build.js',
-                './ci/test.js'
-            ],
-            'skip-interactive': true
-        }, callback);
-    }
-], true);
+  (callback) => {
+    apeReleasing.releasePackage({
+      beforeRelease: [
+        './ci/build.js',
+        './ci/test.js'
+      ],
+      'skip-interactive': true
+    }, callback)
+  }
+], true)
