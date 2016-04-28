@@ -1,6 +1,6 @@
 {
   "name": "ape-releasing",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "ape framework module for releasing tasks.",
   "main": "lib",
   "scripts": {
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/ape-repo/ape-releasing#readme",
   "dependencies": {
     "ape-asking": "^3.0.0",
+    "ape-reporting": "^2.0.3",
     "argx": "^2.0.2",
     "async": "^1.5.2",
     "co": "^4.6.0",
