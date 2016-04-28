@@ -18,7 +18,7 @@ apeTasking.runTasks('release', [
         './ci/build.js',
         './ci/test.js'
       ],
-      'skip-interactive': true
+      // 'skipInteractive': true
     }, callback)
   }
 ], true)
