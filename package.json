@@ -1,6 +1,6 @@
 {
   "name": "ape-releasing",
-  "version": "3.0.8",
+  "version": "3.0.9",
   "description": "ape framework module for releasing tasks.",
   "main": "lib",
   "scripts": {
