@@ -1,6 +1,6 @@
 {
   "name": "ape-releasing",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "ape framework module for releasing tasks.",
   "main": "lib",
   "scripts": {
@@ -27,7 +27,7 @@
     "colorprint": "^3.0.3",
     "execcli": "^4.0.2",
     "stringcase": "^2.0.1",
-    "taggit": "^1.4.0",
+    "taggit": "^2.0.0",
     "versionup": "^2.0.0"
   },
   "devDependencies": {
