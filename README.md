@@ -50,6 +50,7 @@ ape framework module for releasing tasks.
 <!-- Section from "doc/guides/02.Usage.md.hbs" Start -->
 
 <a name="section-doc-guides-02-usage-md"></a>
+
 Usage
 ----
 
@@ -87,6 +88,7 @@ apeReleasing.releasePackage({
 <!-- Section from "doc/guides/03.Options.md.hbs" Start -->
 
 <a name="section-doc-guides-03-options-md"></a>
+
 Options
 -------
 
@@ -122,7 +124,10 @@ This software is released under the [MIT License](https://github.com/ape-repo/ap
 Links
 ------
 
-+ [ape-repo](https://github.com/ape-repo)
-+ [npm](https://www.npmjs.com/)
++ [ape-repo][ape_repo_url]
++ [npm][npm_url]
+
+[ape_repo_url]: https://github.com/ape-repo
+[npm_url]: https://www.npmjs.com/
 
 <!-- Links End -->
