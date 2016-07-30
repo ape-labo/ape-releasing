@@ -1,6 +1,6 @@
 {
   "name": "ape-releasing",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "description": "ape framework module for releasing tasks.",
   "main": "lib",
   "scripts": {
@@ -23,22 +23,22 @@
   "homepage": "https://github.com/ape-repo/ape-releasing#readme",
   "dependencies": {
     "ape-asking": "^3.0.1",
-    "argx": "^2.0.2",
+    "argx": "^3.0.0",
     "co": "^4.6.0",
-    "colorprint": "^4.0.7",
-    "execcli": "^4.0.6",
+    "colorprint": "^4.0.9",
+    "execcli": "^4.0.8",
     "stringcase": "^3.0.1",
     "taggit": "^2.0.1",
     "versionup": "^2.0.1"
   },
   "devDependencies": {
-    "ape-covering": "^3.0.3",
+    "ape-covering": "^3.0.4",
     "ape-reporting": "^3.0.1",
-    "ape-tasking": "^4.0.3",
-    "ape-testing": "^4.0.1",
-    "ape-tmpl": "^5.0.13",
+    "ape-tasking": "^4.0.7",
+    "ape-testing": "^4.0.2",
+    "ape-tmpl": "^5.0.14",
     "ape-updating": "^4.0.4",
-    "coz": "^6.0.6",
+    "coz": "*",
     "injectmock": "^2.0.0",
     "yesno": "0.0.1"
   },
