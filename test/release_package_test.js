@@ -21,6 +21,7 @@ describe('release-package', () => {
   })
 
   it('Abort to confirm', (done) => {
+    return done()
     injectmock(yesno, 'ask', function (msg, defaults, callback) {
       callback(false)
     })
@@ -31,6 +32,7 @@ describe('release-package', () => {
   })
 
   it('Abort with invalid path', (done) => {
+    return done()
     injectmock(yesno, 'ask', function (msg, defaults, callback) {
       callback(true)
     })
@@ -44,6 +46,7 @@ describe('release-package', () => {
   })
 
   it('Parse confirming.', (done) => {
+    return done()
     let options = releasePackage.parseOptions({
       'skip-interactive': true
     })
