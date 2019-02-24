@@ -1,6 +1,6 @@
 {
   "name": "ape-releasing",
-  "version": "5.0.7",
+  "version": "5.0.8",
   "description": "ape framework module for releasing tasks.",
   "main": "lib",
   "scripts": {
@@ -35,7 +35,7 @@
     "ape-testing": "^4.0.2",
     "ape-tmpl": "^6.0.13",
     "ape-updating": "^5.0.3",
-    "coz": "^7.0.14",
+    "coz": "^7.0.15",
     "injectmock": "^2.0.0",
     "yesno": "^0.2.0"
   },
